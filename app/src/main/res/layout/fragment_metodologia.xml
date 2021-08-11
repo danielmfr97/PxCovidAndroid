@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/small_margin_default">
+
+    <Button
+        android:id="@+id/btn_inteligencia_artificial"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_ia"
+        app:icon="@drawable/ic_arrow_right"
+        app:iconGravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_algoritmo"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_algoritmo"
+        app:icon="@drawable/ic_arrow_right"
+        app:iconGravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_inteligencia_artificial" />
+
+    <Button
+        android:id="@+id/btn_metricas"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_metricas"
+        app:icon="@drawable/ic_arrow_right"
+        app:iconGravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_algoritmo" />
+
+    <Button
+        android:id="@+id/btn_projeto"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_sobre_projeto"
+        app:icon="@drawable/ic_arrow_right"
+        app:iconGravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_metricas" />
+
+    <Button
+        android:id="@+id/btn_contribuir"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_contribuir"
+        app:icon="@drawable/ic_arrow_right"
+        app:iconGravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_projeto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CS_textview_home_options" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_marginStart">@dimen/small_margin_default</item>
+        <item name="android:layout_marginEnd">@dimen/small_margin_default</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin_default</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_corner</item>
+    </style>
+    
+    <style name="CS_textinputlayout_avaliacoes_selectable" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_margin">@dimen/small_margin_default</item>
+    </style>
+
+    <style name="CS_button_avaliacoes" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_margin">@dimen/medium_margin_default</item>
+    </style>
+</resources>

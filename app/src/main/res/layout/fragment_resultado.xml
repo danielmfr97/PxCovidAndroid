@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/small_margin_default"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/tvDiagnostico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/probabilidade_diagnostico"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPorcentagem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDiagnostico"
+        tools:text="70%" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPorcentagem" />
+
+    <View
+        android:id="@+id/view_variable"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/medium_margin_default"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+    <TextView
+        android:id="@+id/tvVariaveis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin_default"
+        android:text="@string/variaveis"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_variable" />
+
+    <!--    Diabetes-->
+    <TextView
+        android:id="@+id/labelDiabetes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_diabetes"
+        app:layout_constraintEnd_toStartOf="@id/resDiabetes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvVariaveis" />
+
+    <TextView
+        android:id="@+id/resDiabetes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SIM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelDiabetes"
+        app:layout_constraintTop_toTopOf="@id/labelDiabetes" />
+
+    <!--    Leucocitos-->
+    <TextView
+        android:id="@+id/labelLeucocitos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_leucocitos"
+        app:layout_constraintEnd_toStartOf="@id/resLeucocitos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelDiabetes" />
+
+    <TextView
+        android:id="@+id/resLeucocitos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Maior que 7.500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelLeucocitos"
+        app:layout_constraintTop_toTopOf="@id/labelLeucocitos" />
+
+    <!--    Hemoglobina-->
+    <TextView
+        android:id="@+id/labelHemoglobina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_hemoglobina"
+        app:layout_constraintEnd_toStartOf="@id/resHemoglobina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelLeucocitos" />
+
+    <TextView
+        android:id="@+id/resHemoglobina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Menor que 190.000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelHemoglobina"
+        app:layout_constraintTop_toTopOf="@id/labelHemoglobina" />
+
+    <!--    Plaquetas-->
+    <TextView
+        android:id="@+id/labelPlaquetas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_plaquetas"
+        app:layout_constraintEnd_toStartOf="@id/resPlaquetas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelHemoglobina" />
+
+    <TextView
+        android:id="@+id/resPlaquetas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Entre 8 e 11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelPlaquetas"
+        app:layout_constraintTop_toTopOf="@id/labelPlaquetas" />
+
+    <!--    Idade-->
+    <TextView
+        android:id="@+id/labelIdade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_idade"
+        app:layout_constraintEnd_toStartOf="@id/resIdade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelPlaquetas" />
+
+    <TextView
+        android:id="@+id/resIdade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Maior que 60 anos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelIdade"
+        app:layout_constraintTop_toTopOf="@id/labelIdade" />
+
+    <View
+        android:id="@+id/view_separador"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/medium_margin_default"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelIdade" />
+
+    <Button
+        android:id="@+id/btn_consulta"
+        style="@style/CS_textview_home_options"
+        android:layout_marginTop="@dimen/medium_margin_default"
+        android:text="@string/realizar_outra_consulta"
+        app:icon="@drawable/ic_person_circle_outlined"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_separador" />
+
+    <Button
+        android:id="@+id/btn_info_metodologia"
+        style="@style/CS_textview_home_options"
+        android:layout_marginTop="@dimen/small_margin_default"
+        android:text="@string/infoMetodologia"
+        app:icon="@drawable/ic_info_circle_outlined"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_consulta" />
+
+    <Button
+        android:id="@+id/btn_trabalhos_academicos"
+        style="@style/CS_textview_home_options"
+        android:layout_marginTop="@dimen/small_margin_default"
+        android:text="@string/trabalhosAcademicos"
+        app:icon="@drawable/ic_books_outlined"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_info_metodologia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

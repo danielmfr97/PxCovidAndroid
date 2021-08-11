@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PxCOVID</string>
+    <string name="avaliacaoPaciente">Avaliação Paciente</string>
+    <string name="infoMetodologia">Informações sobre a Metodologia</string>
+    <string name="trabalhosAcademicos">Trabalhos Acadêmicos Relacionados</string>
+    <string name="addPaciente">Adicionar Paciente</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="leucocito">Leucocito</string>
+    <string name="plaquetas">Plaquetas</string>
+    <string name="hemoglobina">Hemoglobina</string>
+    <string name="idade">Idade (anos)</string>
+    <string name="consultar">Consultar</string>
+    <string name="probabilidade_diagnostico">Probabilidade do paciente evoluir para %1$s</string>
+    <string name="variaveis">Variáveis</string>
+    <string name="label_diabetes">Diabetes</string>
+    <string name="label_leucocitos">Leucocitos</string>
+    <string name="label_hemoglobina">Hemoglobina</string>
+    <string name="label_plaquetas">Plaquetas</string>
+    <string name="label_idade">Idade (anos)</string>
+    <string name="realizar_outra_consulta">Realizar outra Consulta</string>
+    <string name="description">O paciente possui uma %1$s probabilidade de evoluir para um quadro de %2$s na ATI. De acordo com o algoritmo de Inteligência Artificial</string>
+    <string name="label_ia">Inteligência Artificial</string>
+    <string name="label_algoritmo">Algoritmo Utilizado</string>
+    <string name="label_metricas">Métricas</string>
+    <string name="label_sobre_projeto">Sobre o Projeto</string>
+    <string name="label_contribuir">Formas de Contribuir</string>
+    <string name="adicionar_paciente">ADICIONAR</string>
+    <string name="desfecho">Desfecho</string>
+    <string name="abrirArtigo"><u>Ler mais</u></string>
+</resources>

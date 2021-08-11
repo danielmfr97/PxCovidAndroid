@@ -1,0 +1,53 @@
+{
+  "inteligencia_artificial": {
+    "resumo": "Ciências de Dados é um campo de estudo multidisciplinar envolvendo vários campos, como: matemáticas, informática, estatística, Inteligência Artificial (IA). Esta área combina uma variedade de dados de smartphones, sensores, documentos, web e outras fontes para obter informações relevantes [1]. Sendo uma das principais vertentes a IA, que é uma área de estudo que pode ser definida como um ramo de pesquisa que se ocupa em desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a inteligência que é característica dos seres humanos [2]. \nPara isso, é desenvolvidos diversos algoritmos de inteligência artificial, que são conjuntos de regras e instruções que cria por si próprio, a partir de experiências passadas, uma função, capaz de resolver o problema que deseja tratar [1]. No geral os algoritmos não são generalistas, o algoritmo pode ser bom ou ruim de acordo com o contexto estudado. Um dos principais algoritmos são: árvores de decisão, clustering, algoritmos genéticos e naive bayes [3].\n",
+    "referencias": [
+      {
+        "ref": "[1]",
+        "link": "https://ieeexplore.ieee.org/document/8732166"
+      },
+      {
+        "ref": "[2]",
+        "link": "https://ieeexplore.ieee.org/document/8673502"
+      },
+      {
+        "ref": "[3]",
+        "link": "https://ieeexplore.ieee.org/document/8732166"
+      }
+    ]
+  },
+  "algoritmo": {
+    "resumo": "O algoritmo de inteligência artificial utilizado neste projeto é o Naive Bayes (NB). Este que, tem seus códigos baseado no Teorema de Bayes, no qual, sendo dois eventos, A e B, calcula a probabilidade do evento A acontecer, P(A), dado o fato em que o evento B ocorreu, P(A|B). Da mesma forma, para P(B|A) calcula a probabilidade do evento B acontecer, P(B), dado o fato em que o evento A ocorreu [1].\n\nDesta forma, em um conjunto de dados com n variáveis, cada variável de entrada torna-se um evento. Devido a isto, ele desconsidera completamente a correlação entre as variáveis, daí o motivo de receber “naive” (ingênuo) no nome [3]. O fato de que o algoritmo assume a independência entre as variáveis o torna muito rápido em seus cálculos, mesmo utilizando grandes quantidades de dados, o que, em situações práticas, faz com que seja muito utilizado em trabalhos de estudo de caso em diversas áreas de conhecimento.\n",
+    "referencias": [
+      {
+        "ref": "",
+        "link": "https://medium.com/turing-talks/turing-talks-16-modelo-de-predição-naive-bayes-6a3e744e7986"
+      }
+    ]
+  },
+  "metricas": {
+    "resumo": "Com o objetivo que profissionais da saúde possam classificar pacientes de acordo com a gravidade apontada na ferramenta, através de um aplicativo móvel, onde deve ser inserida as informações do paciente (Plaquetas, Leucócito, Hemoglobina e Idade) e resultará em um percentual da probabilidade de o paciente evoluir à óbito. Para a classificação será utilizado do algoritmo supervisionado Naive Bayes (NB) para treinamento e teste da base de dados coletadas de prontuários do hospital Barros Barretos (Belém/PA). O resultado mostra que os utilizando uma base de 96 pacientes é que 85.41% pacientes classificados corretamente, a área ROC da matriz confusão é de 0.916 e a precisão de 0.854.",
+    "referencias": []
+  },
+  "sobre_projeto": {
+    "resumo": "Foi realizado um estudo retrospectivo, de caráter observacional, através da análise dos prontuários de pacientes com COVID-19 admitidos nas UTIs do HUJBB no ano de 2020 (janeiro a dezembro), com coleta de dados após a aprovação pelo CEP HUJBB, no período de agosto de 2020 a junho de 2021.\nO projeto teve por finalidade servir como iniciação científica para estudantes da UFPA, além de fornecer dados importantes ao HUJBB sobre os pacientes com COVID-19 que internaram nas suas UTIs.\nOs dados foram obtidos com base nos prontuários dos pacientes com COVID-19 internados nas UTIs do HUJBB. O HUJBB foi referência estadual para o combate à COVID-19, com planejamento de disponibilizar 25 vagas de UTI para esta população no auge da pandemia. Desta forma, estimou-se um tempo médio de 30 dias de internação e que os casos tendem a reduzir após o pico do número de infectados, um número de 150 pacientes no período do estudo mostrava-se realista. Ao final do tempo de pesquisa, foram internados 102 pacientes com COVID-19 nas UTIs do HUJBB, sendo que 6 foram excluídos devido carência de dados clínicos e/ou laboratoriais nos prontuários, finalizando uma amostra de 96 pacientes.\nA presente pesquisa permitiu identificar as variáveis de idade, contagem de leucócitos, história de diabetes, contagem de plaquetas e hemoglobina como as mais relacionadas ao desfecho (Óbito ou Alta) em pacientes com COVID-19 internados no HUJBB. O sistema computacional elaborado à partir destas 5 variáveis permitiu uma acurácia de 85% na predição do desfecho, ainda podendo ser melhorada conforme o treinamento da inteligência artificial seja ampliado.",
+    "referencias": []
+  },
+  "formas_contribuir": {
+    "resumo": "A presente pesquisa permitiu identificar as variáveis de idade, contagem de leucócitos, história de diabetes, contagem de plaquetas e hemoglobina como as mais relacionadas ao desfecho (Óbito ou Alta) em pacientes com COVID-19 internados no HUJBB. O sistema computacional elaborado à partir destas 5 variáveis permitiu uma acurácia de 85% na predição do desfecho, ainda podendo ser melhorada conforme o treinamento da inteligência artificial seja ampliado.\nE todo o projeto está disponível de formar aberta no GITLAB/GITHUB, que é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão, onde será possível baixar e utilizar o código implementado neste trabalho.\n",
+    "referencias": [
+      {
+        "ref": "",
+        "link": "https://gitlab.com/MatheusMaia/python-naivebayes-api"
+      },
+      {
+        "ref": "",
+        "link": "https://gitlab.com/MatheusMaia/python-naivebayes"
+      },
+      {
+        "ref": "",
+        "link": "https://gitlab.com/danielmfr97/python-naivebayes-api"
+      }
+    ]
+  }
+}

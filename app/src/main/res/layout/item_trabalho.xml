@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/smaller_margin_default">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/smaller_margin_default"
+        android:layout_marginTop="@dimen/smaller_margin_default"
+        android:layout_marginEnd="@dimen/smaller_margin_default"
+        android:layout_marginBottom="@dimen/smaller_margin_default">
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.30"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/tvRevista"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="20/12/2021" />
+
+        <TextView
+            android:id="@+id/tvRevista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textAlignment="viewEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvData"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="REVISTA INTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTOINTELECTO" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/smaller_margin_default"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRevista"
+            tools:text="UM ESTUDO EXPLORATÓRIO SOBRE INTELIGÊNCIA ARTIFICIAL APLICADA A MEDICINA" />
+
+        <View
+            android:id="@+id/view_variable"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/small_margin_default"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@id/tvResumo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+        <TextView
+            android:id="@+id/tvResumo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_variable"
+            tools:text="O objetivo deste artigo é explicar os conceitos de Inteligência Artificial, Aprendizado de Máquina, Redes Neurais e suas aplicabilidades no campo da Medicina. Para tanto, serão apresentadas ideias para a possível criação de novas tecnologias para diagnóstico e prevenção de enfermidades." />
+
+
+        <TextView
+            android:id="@+id/tvLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/abrirArtigo"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResumo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

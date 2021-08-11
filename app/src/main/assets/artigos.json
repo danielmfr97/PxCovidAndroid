@@ -1,0 +1,23 @@
+[
+  {
+    "tituloArtigo": "A Comparison of Naive Bayes Methods, Logistic Regression and KNN for Predicting Healing of Covid-19 Patients in Indonesia",
+    "revistaArtigo": "3rd East Indonesia Conference on Computer and Information Technology (EIConCIT)",
+    "linkArtigo": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9431845",
+    "dataArtigo": "17/05/2021",
+    "resumoArtigo": "(...) For this reason, it is necessary to know actually the factors that can reduce the risk of death and predict the chance of curing Covid-19 patients. In data mining, there are several methods that can be used to predict a patient's recovery rate by considering several variables. The variables used in this study were age and gender. Naive Bayes Method, logistic regression, and K-Nearest Neighbor (KNN) are the methods to be chosen in this study to analyze their most accurate performance. The result shows that KNN has the highest accuracy, which is 0.750 compared to logistic regression which has a value of 0.703 as well as Naive Bayes which has the same value. (…)"
+  },
+  {
+    "tituloArtigo": "Decision Support System for Covid19 Affected Family Cash Aid Recipients Using the Naïve Bayes Algorithm and the Weight Product Method",
+    "revistaArtigo": "3rd International Conference on information and Communications Technology (ICOIACT)",
+    "linkArtigo": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9331964",
+    "dataArtigo": "17/05/2021",
+    "resumoArtigo": "(…) This study uses the Naïve Bayes algorithm to calculate the accuracy and classification of cash transfer recipient data. The data used is logical data then processed and calculated. (…) For the calculation of the Weighted Product method using variables Age, Income, Education, Working Status, Family Status and there are two alternatives, namely Cannot and Can. From the Weighted Product calculation, it produces a Vector S ranking value of 2.24 and Vector V of 0.66, which states that families affected by Covid19 have the right to receive cash assistance."
+  },
+  {
+    "tituloArtigo": "Naïve Bayes Classifier for Predicting the Novel Coronavirus",
+    "revistaArtigo": "Third International Conference on Intelligent Communication Technologies and Virtual Mobile Networks (ICICV 2021).",
+    "linkArtigo": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9388410",
+    "dataArtigo": "29/01/2021",
+    "resumoArtigo": "(...)  Nowadays, COVID – 19 has become a pandemic for the mankind. It is a communicable disease and it takes 12 – 24 hours in receiving the reports of diagnose. In various remote and high altitude areas and due to the exponential growth of COVID – 19 in various parts of the world, it is not feasible to perform the test on mass population. This research article describes a novel technique to diagnose coronavirus using naïve bayes classifier and we hope that this technique would be useful and fruitful for the humanity and will be a great step to predict the COVID – 19."
+  }
+]

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="br.com.daniel.ramos.pacientmvp.view.splash.SplashFragment"
+        android:label="PxCOVID"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.daniel.ramos.pacientmvp.view.home.HomeFragment"
+        android:label="PxCOVID"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_avaliacoesFragment"
+            app:destination="@id/avaliacoesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pacienteFragment"
+            app:destination="@id/pacienteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_trabalhosFragment"
+            app:destination="@id/trabalhosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_metodologiaFragment"
+            app:destination="@id/metodologiaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/avaliacoesFragment"
+        android:name="br.com.daniel.ramos.pacientavaliation.ui.avaliacoes.AvaliacoesFragment"
+        android:label="Avaliação Paciente"
+        tools:layout="@layout/fragment_avaliacoes">
+        <action
+            android:id="@+id/action_avaliacoesFragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="br.com.daniel.ramos.pacientmvp.view.resultado.ResultadoFragment"
+        android:label="Resultado"
+        tools:layout="@layout/fragment_resultado" />
+    <fragment
+        android:id="@+id/pacienteFragment"
+        android:name="br.com.daniel.ramos.pacientmvp.view.paciente.PacienteFragment"
+        android:label="Novo Paciente"
+        tools:layout="@layout/fragment_paciente">
+        <action
+            android:id="@+id/action_pacienteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trabalhosFragment"
+        android:name="br.com.daniel.ramos.pacientmvp.view.trabalhos.TrabalhosFragment"
+        android:label="Trabalhos Acadêmicos"
+        tools:layout="@layout/fragment_trabalhos" />
+    <fragment
+        android:id="@+id/metodologiaFragment"
+        android:name="br.com.daniel.ramos.pacientmvp.view.metodologia.MetodologiaFragment"
+        android:label="Infos. sobre a Metodologia"
+        tools:layout="@layout/fragment_metodologia">
+        <action
+            android:id="@+id/action_metodologiaFragment_to_customInfoFragment"
+            app:destination="@id/customInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customInfoFragment"
+        android:name="br.com.daniel.ramos.pacientmvp.view.metodologia.CustomInfoFragment"
+        tools:layout="@layout/fragment_custom_info" />
+</navigation>

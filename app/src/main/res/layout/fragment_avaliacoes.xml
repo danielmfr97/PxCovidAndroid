@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menuDiabetes"
+        style="@style/CS_textinputlayout_avaliacoes_selectable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/diabetes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menuLeucocitos"
+        style="@style/CS_textinputlayout_avaliacoes_selectable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/leucocito"
+        app:layout_constraintEnd_toEndOf="@id/menuDiabetes"
+        app:layout_constraintStart_toStartOf="@id/menuDiabetes"
+        app:layout_constraintTop_toBottomOf="@id/menuDiabetes">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menuPlaquetas"
+        style="@style/CS_textinputlayout_avaliacoes_selectable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/plaquetas"
+        app:layout_constraintEnd_toEndOf="@id/menuDiabetes"
+        app:layout_constraintStart_toStartOf="@id/menuDiabetes"
+        app:layout_constraintTop_toBottomOf="@id/menuLeucocitos">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menuHemoglobina"
+        style="@style/CS_textinputlayout_avaliacoes_selectable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hemoglobina"
+        app:layout_constraintEnd_toEndOf="@id/menuDiabetes"
+        app:layout_constraintStart_toStartOf="@id/menuDiabetes"
+        app:layout_constraintTop_toBottomOf="@id/menuPlaquetas">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menuIdade"
+        style="@style/CS_textinputlayout_avaliacoes_selectable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/idade"
+        app:layout_constraintEnd_toEndOf="@id/menuDiabetes"
+        app:layout_constraintStart_toStartOf="@id/menuDiabetes"
+        app:layout_constraintTop_toBottomOf="@id/menuHemoglobina">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/menuDesfecho"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="@string/desfecho"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/menuDiabetes"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/menuDiabetes"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/menuIdade">-->
+
+    <!--        <AutoCompleteTextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:inputType="none"/>-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_margin_default"
+        android:layout_marginEnd="@dimen/medium_margin_default"
+        android:layout_marginBottom="@dimen/medium_margin_default"
+        android:inputType="none"
+        android:text="@string/consultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
