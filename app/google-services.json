@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "290200709020",
+    "project_id": "pxcovid-5518e",
+    "storage_bucket": "pxcovid-5518e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290200709020:android:4fcacc1ed2ff983aaa0a59",
+        "android_client_info": {
+          "package_name": "br.com.daniel.ramos.pacientmvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290200709020-b5srhiouq1tbf3noof1fnl1fu56b7j75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.daniel.ramos.pacientmvp",
+            "certificate_hash": "a147e5d7b7412b7aa18c7d38f703a98b0e2eaeca"
+          }
+        },
+        {
+          "client_id": "290200709020-r39191suml0cb8u18ktjvk4hk5kcp6f7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApAqHwCPjj6DIkxwStU0LSMxl8ChuCH9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290200709020-r39191suml0cb8u18ktjvk4hk5kcp6f7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

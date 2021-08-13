@@ -11,7 +11,7 @@
         android:layout_height="0dp"
         android:layout_margin="@dimen/small_margin_default"
         android:scaleType="fitXY"
-        android:src="@drawable/medical_research_rafiki"
+        android:src="@drawable/ic_medical_research_rafiki"
         app:layout_constraintBottom_toTopOf="@id/tv_avaliacao_paciente"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

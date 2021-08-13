@@ -10,5 +10,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/medicine_cuate"/>
+        android:src="@drawable/ic_medicine_cuate"/>
 </FrameLayout>

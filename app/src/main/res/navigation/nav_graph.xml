@@ -48,7 +48,23 @@
         android:id="@+id/resultadoFragment"
         android:name="br.com.daniel.ramos.pacientmvp.view.resultado.ResultadoFragment"
         android:label="Resultado"
-        tools:layout="@layout/fragment_resultado" />
+        tools:layout="@layout/fragment_resultado" >
+        <action
+            android:id="@+id/action_resultadoFragment_to_avaliacoesFragment"
+            app:popUpTo="@id/avaliacoesFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/avaliacoesFragment" />
+        <action
+            android:id="@+id/action_resultadoFragment_to_metodologiaFragment"
+            app:popUpTo="@id/metodologiaFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/metodologiaFragment" />
+        <action
+            android:id="@+id/action_resultadoFragment_to_trabalhosFragment"
+            app:popUpTo="@id/trabalhosFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/trabalhosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/pacienteFragment"
         android:name="br.com.daniel.ramos.pacientmvp.view.paciente.PacienteFragment"

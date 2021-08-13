@@ -1,5 +1,6 @@
 package br.com.daniel.ramos.pacientmvp.view.splash
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -33,6 +34,7 @@ class SplashViewModel(
             val result = diabetesRepository.getDiabetesData()
             diabetesList.postValue(result)
         }
+        Log.d("TAG","RODOU DIABETES")
         return diabetesList
     }
 
@@ -41,6 +43,7 @@ class SplashViewModel(
             val result = leucocitoRepository.getLeucocitoData()
             leucocitoList.postValue(result)
         }
+        Log.d("TAG","RODOU LEUCOCITO")
         return leucocitoList
     }
 
@@ -49,6 +52,7 @@ class SplashViewModel(
             val result = plaquetaRepository.getPlaquetaData()
             plaquetaList.postValue(result)
         }
+        Log.d("TAG","RODOU PLAQUETA")
         return plaquetaList
     }
 
@@ -57,6 +61,7 @@ class SplashViewModel(
             val result = hemoglobinaRepository.getHemoglobinaData()
             hemoglobinaList.postValue(result)
         }
+        Log.d("TAG","RODOU HEMOGLOBINA")
         return hemoglobinaList
     }
 
@@ -65,6 +70,7 @@ class SplashViewModel(
             val result = idadeRepository.getIdadeData()
             idadeList.postValue(result)
         }
+        Log.d("TAG","RODOU IDADE")
         return idadeList
     }
 
@@ -73,6 +79,7 @@ class SplashViewModel(
             val result = desfechoRepository.getDesfechoData()
             desfechoList.postValue(result)
         }
+        Log.d("TAG","RODOU DESFECHO")
         return desfechoList
     }
 }

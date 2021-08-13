@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import br.com.daniel.ramos.pacientmvp.R
 import br.com.daniel.ramos.pacientmvp.databinding.FragmentResultadoBinding
 import br.com.daniel.ramos.pacientmvp.view.avaliacoes.AvaliacoesViewModel
@@ -24,7 +25,20 @@ class ResultadoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        configurarBotoes()
         popularDados()
+    }
+
+    private fun configurarBotoes() {
+        binding.btnConsulta.setOnClickListener {
+            findNavController().navigate(ResultadoFragmentDirections.actionResultadoFragmentToAvaliacoesFragment())
+        }
+        binding.btnInfoMetodologia.setOnClickListener {
+            findNavController().navigate(ResultadoFragmentDirections.actionResultadoFragmentToMetodologiaFragment())
+        }
+        binding.btnTrabalhosAcademicos.setOnClickListener {
+            findNavController().navigate(ResultadoFragmentDirections.actionResultadoFragmentToTrabalhosFragment())
+        }
     }
 
     private fun popularDados() {
