@@ -4,6 +4,9 @@ plugins {
     id 'kotlin-kapt'
     id "realm-android"
     id "androidx.navigation.safeargs.kotlin"
+    id "com.google.gms.google-services"
+    // Apply the Crashlytics Gradle plugin
+    id "com.google.firebase.crashlytics"
 }
 
 android {
@@ -53,6 +56,11 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    // Firebase
+    def firebase_bom = "26.3.0"
+    implementation platform("com.google.firebase:firebase-bom:$firebase_bom")
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
     //Retrofit dependencies
     implementation "com.squareup.retrofit2:retrofit:$version_retrofit"
     implementation "com.squareup.retrofit2:converter-gson:$version_retrofit"
@@ -78,6 +86,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    implementation 'com.codesgood:justifiedtextview:1.1.0'
+
     //GSON
     implementation 'com.google.code.gson:gson:2.8.5'
     testImplementation 'junit:junit:4.+'
