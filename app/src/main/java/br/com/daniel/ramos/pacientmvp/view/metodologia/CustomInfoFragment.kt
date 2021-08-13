@@ -38,15 +38,15 @@ class CustomInfoFragment : Fragment() {
                 popularDados(viewModel.algoritmoInfo)
                 setToolbarTitle("Algoritmo Utilizado")
             }
-            "contribuir" -> {
+            "metricas" -> {
                 popularDados(viewModel.contribuirInfo)
                 setToolbarTitle("Métricas")
             }
-            "metricas" -> {
+            "projeto" -> {
                 popularDados(viewModel.metricasInfo)
                 setToolbarTitle("Sobre o Projeto")
             }
-            "projeto" -> {
+            "contribuir" -> {
                 popularDados(viewModel.projetoInfo)
                 setToolbarTitle("Formas de Contribuir")
             }

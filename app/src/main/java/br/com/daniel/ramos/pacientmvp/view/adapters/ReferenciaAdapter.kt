@@ -36,13 +36,13 @@ class ReferenciaAdapter : RecyclerView.Adapter<ReferenciaAdapter.ViewHolder>() {
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var refNum = binding.tvReferenciaNumber
         var refLink = binding.tvReferenciaLink
+        var tvReferenciaNumber = binding.tvReferenciaNumber
 
         fun bind(item: Referencia) {
             if (item.ref.isNotEmpty()) {
-                refNum.visibility = View.VISIBLE
-                refNum.text = item.ref
+                tvReferenciaNumber.visibility = View.VISIBLE
+                tvReferenciaNumber.text = item.ref
             }
             refLink.text = item.link
             refLink.setOnClickListener {

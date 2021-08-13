@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="@dimen/small_margin_default"
-    android:orientation="vertical"
-    android:scrollbars="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvExplicacao"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/smaller_margin_default"
-        tools:text="Ciências de Dados é um campo de estudo multidisciplinar envolvendo vários campos, como: matemáticas, informática, estatística, Inteligência Artificial (IA). Esta área combina uma variedade de dados de smartphones, sensores, documentos, web e outras fontes para obter informações relevantes [1]. Sendo uma das principais vertentes a IA, que é uma área de estudo que pode ser definida como um ramo de pesquisa que se ocupa em desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a inteligência que é característica dos seres humanos [2].
-Para isso, é desenvolvidos diversos algoritmos de inteligência artificial, que são conjuntos de regras e instruções que cria por si próprio, a partir de experiências passadas, uma função, capaz de resolver o problema que deseja tratar [1]. No geral os algoritmos não são generalistas, o algoritmo pode ser bom ou ruim de acordo com o contexto estudado. Um dos principais algoritmos são: árvores de decisão, clustering, algoritmos genéticos e naive bayes [3]." />
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/small_margin_default"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="REFERÊNCIAS:"
-        android:textSize="12sp" />
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/tvExplicacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/smaller_margin_default"
+            tools:text="Ciências de Dados é um campo de estudo multidisciplinar envolvendo vários campos, como: matemáticas, informática, estatística, Inteligência Artificial (IA). Esta área combina uma variedade de dados de smartphones, sensores, documentos, web e outras fontes para obter informações relevantes [1]. Sendo uma das principais vertentes a IA, que é uma área de estudo que pode ser definida como um ramo de pesquisa que se ocupa em desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a inteligência que é característica dos seres humanos [2].
+Para isso, é desenvolvidos diversos algoritmos de inteligência artificial, que sãCiências de Dados é um campo de estudo multidisciplinar envolvendo vários campos, como: matemáticas, informática, estatística, Inteligência Artificial (IA). Esta área combina uma variedade de dados de smartphones, sensores, documentos, web e outras fontes para obter informações relevantes [1]. Sendo uma das principais vertentes a IA, que é uma área de estudo que pode ser definida como um ramo de pesquisa que se ocupa em desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a inteligência que é característica dos seres humanos [2].
+Para isso, é desenvolvidos diversos algoritmos de inteligência artificial, que são cCiências de Dados é um campo de estudo multidisciplinar envolvendo vários campos, como: matemáticas, informática, estatística, Inteligência Artificial (IA). Esta área combina uma variedade de dados de smartphones, sensores, documentos, web e outras fontes para obter informações relevantes [1]. Sendo uma das principais vertentes a IA, que é uma área de estudo que pode ser definida como um ramo de pesquisa que se ocupa em desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a inteligência que é característica dos seres humanos [2].
+Para isso, é desenvolvidos diversos algoritmos de inteligência artificial, que são cCiências de Dados é um campo de estudo multidisciplinar envolvendo vários campos, como: matemáticas, informática, estatística, Inteligência Artificial (IA). Esta área combina uma variedade de dados de smartphones, sensores, documentos, web e outras fontes para obter informações relevantes [1]. Sendo uma das principais vertentes a IA, que é uma área de estudo que pode ser definida como um ramo de pesquisa que se ocupa em desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a inteligência que é característica dos seres humanos [2].
+Para isso, é desenvolvidos diversos algoritmos de inteligência artificial, que são cCiências de Dados é um campo de estudo multidisciplinar envolvendo vários campos, como: matemáticas, informática, estatística, Inteligência Artificial (IA). Esta área combina uma variedade de dados de smartphones, sensores, documentos, web e outras fontes para obter informações relevantes [1]. Sendo uma das principais vertentes a IA, que é uma área de estudo que pode ser definida como um ramo de pesquisa que se ocupa em desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a inteligência que é característica dos seres humanos [2].
+Para isso, é desenvolvidos diversos algoritmos de inteligência artificial, que são cCiências de Dados é um campo de estudo multidisciplinar envolvendo vários campos, como: matemáticas, informática, estatística, Inteligência Artificial (IA). Esta área combina uma variedade de dados de smartphones, sensores, documentos, web e outras fontes para obter informações relevantes [1]. Sendo uma das principais vertentes a IA, que é uma área de estudo que pode ser definida como um ramo de pesquisa que se ocupa em desenvolver mecanismos e dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a inteligência que é característica dos seres humanos [2].
+Para isso, é desenvolvidos diversos algoritmos de inteligência artificial, que são co conjuntos de regras e instruções que cria por si próprio, a partir de experiências passadas, uma função, capaz de resolver o problema que deseja tratar [1]. No geral os algoritmos não são generalistas, o algoritmo pode ser bom ou ruim de acordo com o contexto estudado. Um dos principais algoritmos são: árvores de decisão, clustering, algoritmos genéticos e naive bayes [3]." />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvReferencias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-</androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REFERÊNCIAS:"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReferencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+</ScrollView>
