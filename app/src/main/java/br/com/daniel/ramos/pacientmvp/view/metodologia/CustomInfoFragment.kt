@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import br.com.daniel.ramos.pacientmvp.MainActivity
 import br.com.daniel.ramos.pacientmvp.data.model.Info
 import br.com.daniel.ramos.pacientmvp.databinding.FragmentCustomInfoBinding
@@ -56,7 +54,10 @@ class CustomInfoFragment : Fragment() {
     private fun popularDados(info: Info) {
         mAdapter = ReferenciaAdapter()
         mAdapter.infoList = info.referencias
-        binding.tvExplicacao.text = info.resumo
+        val text = "<html><body><p align=\"justify\">${info.resumo}</p></body></html>"
+        binding.tvExplicacao.loadData(text, "text/html", "utf-8")
+        if (mAdapter.infoList.isEmpty())
+            binding.labelRef.visibility = View.GONE
         binding.rvReferencias.adapter = mAdapter
     }
 

@@ -87,8 +87,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
 
-    implementation 'com.codesgood:justifiedtextview:1.1.0'
-
     //GSON
     implementation 'com.google.code.gson:gson:2.8.5'
     testImplementation 'junit:junit:4.+'

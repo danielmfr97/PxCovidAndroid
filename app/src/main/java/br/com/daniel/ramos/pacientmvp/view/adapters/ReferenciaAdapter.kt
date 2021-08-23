@@ -36,17 +36,17 @@ class ReferenciaAdapter : RecyclerView.Adapter<ReferenciaAdapter.ViewHolder>() {
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var refLink = binding.tvReferenciaLink
-        var tvReferenciaNumber = binding.tvReferenciaNumber
+        var refLink = binding.tvReferenciaNumber
+        var tvReferenciaNumber = binding.tvReferenciaLink
 
         fun bind(item: Referencia) {
-            if (item.ref.isNotEmpty()) {
+            if (item.link.isNotEmpty()) {
                 tvReferenciaNumber.visibility = View.VISIBLE
-                tvReferenciaNumber.text = item.ref
+                tvReferenciaNumber.text = item.link
             }
-            refLink.text = item.link
+            refLink.text = item.ref
             refLink.setOnClickListener {
-                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(item.link))
+                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(item.ref))
                 browserIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 ContextCompat.startActivity(
                     MainActivity.instance!!.applicationContext,
